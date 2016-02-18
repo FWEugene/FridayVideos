@@ -1,0 +1,10 @@
+PODS:
+  - XCDYouTubeKit (2.5.0)
+
+DEPENDENCIES:
+  - XCDYouTubeKit (~> 2.5)
+
+SPEC CHECKSUMS:
+  XCDYouTubeKit: 9db45d0f5af8fb5a47561ac7f2fe6de885f57453
+
+COCOAPODS: 0.39.0

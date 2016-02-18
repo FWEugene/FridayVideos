@@ -1,0 +1,6 @@
+framework module Pods_FWFridayVideos {
+  umbrella header "Pods-FWFridayVideos-umbrella.h"
+
+  export *
+  module * { export * }
+}
