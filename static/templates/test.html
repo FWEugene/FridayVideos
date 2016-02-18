@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest object</h2>
+
+<button type="button" onclick="doSomething()">Change Content</button>
+
+<p id="demo"></p>
+
+<script>
+
+function doSomething() {
+    var url = 'http://localhost:8080/static/templates/stackTemplate.xml';
+	
+	loadXMLDoc(url, function(err, data) {
+		parser = new DOMParser();
+		var doc = parser.parseFromString(data, "application/xml");
+		console.log(doc);
+	})
+}
+
+function loadXMLDoc(resource, callback) {
+	
+    var method = 'GET';
+    var xhr = new XMLHttpRequest();
+      xhr.responseType = 'xml';
+      xhr.onreadystatechange = function() {
+        try {
+			if (xhr.readyState == 4 && xhr.status == 200)
+			      {
+			        if (xhr.responseText)
+			         {
+			             callback(null, xhr.responseText);
+		         	
+			         }
+				 }
+        } catch (err) {
+          console.error('Aborting request ' + url + '. Error: ' + err);
+          xhr.abort();
+         // callback(new Error("Error making request to: " + url + " error: " + err));
+        }
+      };
+
+      xhr.open(method, resource, true);
+  	  xhr.send();
+}	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+  <head>
+  <style>
+    .bannerTitle {
+      color: rgba(55, 55, 55);
+    }
+	.catalog {
+		background-color: rgba(155, 155, 155);
+	}
+	.sectionTitle {
+        color: rgba(205.0, 205.0, 205.0);
+	}
+    </style>
+   </head>
+   <stackTemplate class="catalog">
+	   <banner>
+        	<title class="bannerTitle">Future Workshops Friday Videos</title>
+	   </banner>
+	   <collectionList>
+	      <grid>
+				<header>
+					<title class="sectionTitle">Title 1</title>
+				</header>
+	         <section>
+	         <lockup videoIdentifier="bvAEJ8G9l9U"><img height="180" src="http://i.ytimg.com/vi/bvAEJ8G9l9U/hqdefault.jpg" width="320" /><title>How to Find Work You Love | Scott Dinsmore | TED Talks</title></lockup><lockup videoIdentifier="8jPQjjsBbIc"><img height="180" src="http://i.ytimg.com/vi/8jPQjjsBbIc/hqdefault.jpg" width="320" /><title>How to Stay Calm When You Know You'll Be Stressed | Daniel Levitin | TED Talks</title></lockup><lockup videoIdentifier="f4E10GpvfZs"><img height="180" src="http://i.ytimg.com/vi/f4E10GpvfZs/hqdefault.jpg" width="320" /><title>Handheld Precision Digital Voltage Source - Software Upgrade: Playback mode</title></lockup></section>
+	      </grid>
+	   </collectionList>
+	</stackTemplate>   
+  </document>
