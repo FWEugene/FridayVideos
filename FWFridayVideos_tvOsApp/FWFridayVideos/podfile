@@ -1,0 +1,8 @@
+
+use_frameworks!
+
+target 'FWFridayVideos' do
+pod 'XCDYouTubeKit', '~> 2.5'
+end
+
+
